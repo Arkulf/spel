@@ -13,18 +13,18 @@ public class Numbers {
 
 	public static void main(String[] args) {
 
-		myGuess.add(2);
-		myGuess.add(4);
-		myGuess.add(10);
-		myGuess.add(14);
-		myGuess.add(20);
-		myGuess.add(21);
-		myGuess.add(24);
+		myGuess.add(8);
+		myGuess.add(13);
+		myGuess.add(15);
+		myGuess.add(27);
+		myGuess.add(30);
+		myGuess.add(33);
+		myGuess.add(34);
 
 		attempts = 0;
 		List<Integer> result = new ArrayList<Integer>();
         int oldValue=0;
-		while (attempts < 10000000) {
+		while (attempts <1000000) {
 			result.clear();
 			result.addAll(draw(attempts));
 
@@ -59,6 +59,7 @@ public class Numbers {
 		}
 
 		Collections.sort(data);
+//		System.out.println(data.toString());
 		return data;
 	}
 
