@@ -1,3 +1,4 @@
+package sp1;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
@@ -24,7 +25,7 @@ public class Numbers {
 		attempts = 0;
 		List<Integer> result = new ArrayList<Integer>();
         int oldValue=0;
-		while (attempts <1000000) {
+		while (attempts <3500000) {
 			result.clear();
 			result.addAll(draw(attempts));
 
@@ -40,6 +41,7 @@ public class Numbers {
 	}
 
 	private static List<Integer> draw(int cnt) {
+		//Comment Got to write something
 
 		attempts++;
 
