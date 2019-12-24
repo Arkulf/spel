@@ -25,7 +25,8 @@ public class Numbers {
 		attempts = 0;
 		List<Integer> result = new ArrayList<Integer>();
         int oldValue=0;
-		while (attempts <3500000) {
+        long start = System.currentTimeMillis();
+		while (attempts <5000000) {
 			result.clear();
 			result.addAll(draw(attempts));
 
@@ -38,6 +39,9 @@ public class Numbers {
 		}
 		System.out.println("0:" + overview[0] + " 1:" + overview[1] + " 2:" + overview[2] + " 3:" + overview[3] + " 4:"
 				+ overview[4] + " 5:" + overview[5] + " 6:" + overview[6] + " 7:" + overview[7]);
+		
+		long slut = System.currentTimeMillis();
+		System.out.println("It took " + (slut - start) + " ms " + "to scan " + attempts + " attempts");	
 	}
 
 	private static List<Integer> draw(int cnt) {
